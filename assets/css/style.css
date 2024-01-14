@@ -25,6 +25,14 @@
     background-color: #fff;
 }
 
+.bg-color-personal-info {
+    background-color: #f4f4f4;
+}
+
+.bg-color-work-history {
+    background-color: #9b59b6;
+}
+
 
 /*********** SPECIAL paddings/ Margins / Text ******/
 
@@ -59,6 +67,7 @@ h4 {
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
@@ -162,6 +171,130 @@ header {
 }
 
 
+/******** PERSONAL INFO ******************************************/
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key, 
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p, 
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
+}
+
+
+/******** THREE REASONS ******************************************/
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+
+/******** SKILLS ******************************************/
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    min-width: 140px;
+    vertical-align: middle;
+    padding: 12px 30px 2px 10px;
+    font-weight: 400;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.3);
+    height: 25px;
+}
+
+
+/******** WORK HISTORY ******************************************/
+.history-items{
+    margin-bottom: 30px;
+}
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative; /*to include absolute children elements*/
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+/*to show the attribute inside element timeline-item: data-dates BEFORE element*/
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+/*to show a little CIRCLE AFTER element*/
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 2.4em;
+    left: -6px;
+    border-radius: 12px;
+    content: '';/*for it to showw, need content, but don't want any content to appear*/
+    background: #fafafa;
+}
+
+
+
 /******** FOOTER ******************************************/
 
 footer {
@@ -213,3 +346,4 @@ footer {
 .social-links li a i:hover {
     background: #e84610;
 }
+
