@@ -91,10 +91,12 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form action="">
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-                        <textarea name="projectsummary" id="projectsummary" class="form-control" rows="5"
+                    <form onsubmit="return sendMail(this);" action="">
+                        <input type="text" name="user_name" id="user_name" class="form-control" placeholder="Name"
+                            required>
+                        <input type="email" name="user_email" id="user_email" class="form-control" placeholder="Email"
+                            required>
+                        <textarea name="project_summary" id="project_summary" class="form-control" rows="5"
                             placeholder="Project description" required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
@@ -170,6 +172,8 @@
 
     <!--Fontawesome JS-->
     <script src="https://kit.fontawesome.com/19349c9d8e.js" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/sendEmail.js"></script>
 
 </body>
 
